@@ -1,7 +1,7 @@
 {
-  "name": "elearning-platform",
+  "name": "career-connect-platform",
   "version": "1.0.0",
-  "description": "A comprehensive e-learning platform for startups",
+  "description": "B2B SaaS platform for colleges to enhance student career development and job placement success",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,7 +11,7 @@
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build"
   },
-  "keywords": ["e-learning", "education", "platform", "startup"],
+  "keywords": ["career-development", "networking", "alumni", "job-placement", "b2b-saas"],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
@@ -27,7 +27,11 @@
     "express-rate-limit": "^6.10.0",
     "helmet": "^7.0.0",
     "express-validator": "^7.0.1",
-    "cloudinary": "^1.40.0"
+    "cloudinary": "^1.40.0",
+    "socket.io": "^4.7.2",
+    "cron": "^2.4.4",
+    "csv-parser": "^3.0.0",
+    "exceljs": "^4.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

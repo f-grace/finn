@@ -34,10 +34,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/elearning
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
-app.use('/api/courses', require('./routes/courses'));
-app.use('/api/lessons', require('./routes/lessons'));
-app.use('/api/enrollments', require('./routes/enrollments'));
-app.use('/api/payments', require('./routes/payments'));
+app.use('/api/networking', require('./routes/networking'));
+app.use('/api/institutions', require('./routes/institutions'));
 app.use('/api/analytics', require('./routes/analytics'));
 
 // Serve static assets in production
